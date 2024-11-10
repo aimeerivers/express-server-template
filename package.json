@@ -18,16 +18,33 @@
     "type": "git",
     "url": "git+https://github.com/aimeerivers/express-server-template.git"
   },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "dev": "concurrently \"npm run build:watch\" \"npm run start:watch\" \"npm run tailwind:css:watch\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint --fix",
     "lint:check": "eslint",
-    "package:lint": "npx npm-package-json-lint ."
+    "package:lint": "npx npm-package-json-lint .",
+    "start": "node dist/src/server.js",
+    "start:watch": "nodemon dist/src/server.js",
+    "tailwind:css": "postcss src/styles/style.css -o public/styles/style.css",
+    "tailwind:css:watch": "postcss src/styles/style.css -o public/styles/style.css --watch --verbose",
+    "test": "NODE_ENV=test node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "app-root-path": "3.1.0",
+    "dotenv": "16.4.5",
+    "express": "4.21.1",
+    "pug": "3.0.3"
   },
   "devDependencies": {
+    "@types/express": "5.0.0",
+    "@types/node": "22.9.0",
+    "concurrently": "9.1.0",
     "eslint-config-plus-prettier": "3.0.0",
     "typescript": "5.6.3"
   },
