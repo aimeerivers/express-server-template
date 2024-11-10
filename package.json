@@ -1,0 +1,24 @@
+{
+  "name": "express-server-template",
+  "version": "0.0.1",
+  "description": "A template for a new express server project",
+  "keywords": [
+    "express",
+    "server",
+    "template"
+  ],
+  "homepage": "https://github.com/aimeerivers/express-server-template#readme",
+  "bugs": {
+    "url": "https://github.com/aimeerivers/express-server-template/issues"
+  },
+  "license": "ISC",
+  "author": "aimee rivers",
+  "main": "dist/src/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aimeerivers/express-server-template.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
