@@ -27,6 +27,17 @@ describe("App", () => {
     });
   });
 
+  describe("API", () => {
+    describe("Status", () => {
+      it("should respond to a status request", async () => {
+        const res = await request(app).get("/api/v1/status");
+        assert.equal(res.statusCode, 200);
+        assert.equal(res.body.status, "OK");
+        assert.equal(res.body.message, "API is running");
+      });
+    });
+  });
+
   after(async () => {
     server.close();
   });

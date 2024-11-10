@@ -4,10 +4,13 @@ import express from "express";
 import path from "path";
 
 import packageJson from "../package.json" with { type: "json" };
+import { mountApi } from "./api.js";
 
 dotenv.config();
 
 const app = express();
+
+mountApi("/api/v1", app);
 
 app.use(express.urlencoded({ extended: true }));
 
