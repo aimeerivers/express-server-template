@@ -42,19 +42,19 @@
     "pug": "3.0.3"
   },
   "devDependencies": {
-    "@types/express": "5.0.0",
-    "@types/node": "22.13.4",
+    "@types/express": "5.0.1",
+    "@types/node": "22.13.10",
     "@types/supertest": "6.0.2",
-    "autoprefixer": "10.4.20",
+    "autoprefixer": "10.4.21",
     "concurrently": "9.1.2",
-    "eslint-config-plus-prettier": "4.1.6",
+    "eslint-config-plus-prettier": "4.1.7",
     "nodemon": "3.1.9",
     "postcss": "8.5.3",
-    "postcss-cli": "11.0.0",
+    "postcss-cli": "11.0.1",
     "postcss-minify": "1.1.0",
     "supertest": "7.0.0",
     "tailwindcss": "3.4.17",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   },
   "prettier": "eslint-config-plus-prettier/prettier"
 }
