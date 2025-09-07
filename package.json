@@ -42,6 +42,9 @@
     "pug": "3.0.3"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "0.5.10",
+    "@tailwindcss/postcss": "4.1.13",
+    "@tailwindcss/typography": "0.5.16",
     "@types/express": "5.0.3",
     "@types/node": "22.17.2",
     "@types/supertest": "6.0.3",
